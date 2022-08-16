@@ -7,40 +7,103 @@
 }
 
 body {
-    align-items: center;
     background-color: hsl(217, 54%, 11%);
-    display: flex;
     font-family: 'Outfit', sans-serif;
-    font-size: 1em;
+    display: flex;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    width: 100vw;
+}
+
+.card-image {
+    border-radius: 7px;
+    width: 100%;
+    cursor: pointer;
 }
 
 main {
     background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem;
+    max-width: 345px;
     border-radius: 10px;
-    max-width: 21.5rem;
-    padding: 1.3rem;
+    box-shadow: 0px 20px 30px 15px rgba(0, 0, 0, 0.47);
 }
 
 main h1 {
-    color: hsl(0, 0%, 100%);
-    font-size: 1.2em;
-    font-weight: ;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+main h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 main > p {
-    color: rgba(255, 255, 255, 0.383);
-    font-weight: 00;
+    color: hsl(215, 52%, 70%);
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 1rem 0;
 }
 
-.equilibrium-img {
-    width: 100%;
+.price {
+    display: flex;
+    justify-content: space-between;
 }
 
-.equilibrium-creator img {
-    width: 2rem;
+.price .ethereum-price {
+    color: hsl(178, 100%, 50%);
+    display: inline-block;
+    font-weight: 400;
+}
+
+.price .ethereum-price::before {
+    content: url('../images/icon-ethereum.svg');
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.price .time-left {
+    color:hsl(215, 52%, 70%);
+}
+
+.price .time-left::before {
+    content: url('../images/icon-clock.svg');
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.line {
+    content: '';
+    display: block;
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+    margin-top: 0.8rem;
+  }
+
+.creator {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 52%, 70%);
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.jules {
+    color: white;
+}
+
+.jules:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.creator img {
+    width: 32px;
     border: 1px solid white;
     border-radius: 50%;
+    margin-right: 15px;
 }
+
