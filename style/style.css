@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+* a {
+    text-decoration: none;
+    color:#fff;
+}
+
 body {
     align-items: center;
     background-color: hsl(217, 54%, 11%);
@@ -54,15 +59,19 @@ main {
 }
 
 main h1 {
-    color: white;
     font-size: 1.4em;
     font-weight: 600;
     margin-top: 1.5rem;
 }
 
-main h1:hover {
+main h1 a {
+    color: #fff;
+}
+
+main a:hover {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
+    transition: ease all .5s;
 }
 
 main > p {
@@ -113,6 +122,10 @@ main > p {
     display: flex;
     font-weight: 300;
     margin-top: 20px;
+}
+
+.creator  {
+    transition: ease 0.5s;
 }
 
 .jules {
